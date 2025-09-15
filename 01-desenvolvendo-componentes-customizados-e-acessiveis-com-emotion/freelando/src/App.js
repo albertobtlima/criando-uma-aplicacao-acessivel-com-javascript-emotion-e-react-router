@@ -1,3 +1,4 @@
+import { Container } from "react-grid-system";
 import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
 import { CampoTexto } from "./componentes/CampoTexto/CampoTexto";
 import { Card } from "./componentes/Card/Card";
@@ -13,17 +14,19 @@ function App() {
         <h1>@Freelando</h1>
         <p>Login</p>
       </Cabecalho>
-      <Card>
-        <Tipografia variante="h1" componente="h1">
-          <h2>Crie seu cadastro</h2>
-        </Tipografia>
-        <Tipografia variante="body" componente="body">
-          Crie seu perfil gratuitamente para começar a trabalhar com os melhores
-          freelancers. Em seguida, você poderá dar mais detalhes sobre suas
-          demandas e sobre sua forma de trabalho.
-        </Tipografia>
-        <CampoTexto titulo="Nome Completo" />
-      </Card>
+      <Container>
+        <Card>
+          <Tipografia variante="h1" componente="h1">
+            <h2>Crie seu cadastro</h2>
+          </Tipografia>
+          <Tipografia variante="body" componente="body">
+            Crie seu perfil gratuitamente para começar a trabalhar com os
+            melhores freelancers. Em seguida, você poderá dar mais detalhes
+            sobre suas demandas e sobre sua forma de trabalho.
+          </Tipografia>
+          <CampoTexto titulo="Nome Completo" />
+        </Card>
+      </Container>
     </ProvedorTema>
   );
 }
