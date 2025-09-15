@@ -9,9 +9,6 @@ const estilos = (tema) => {
       margin: 0,
       padding: 0,
     },
-    header: {
-      display: "flex",
-    },
   };
 };
 
