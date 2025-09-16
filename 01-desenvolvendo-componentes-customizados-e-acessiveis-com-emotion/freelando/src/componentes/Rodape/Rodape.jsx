@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const FundoRodape = styled.footer`
   display: flex;
   justify-content: space-between;
-  color: #ffffff;
+  color: ${(props) => props.theme.cores.neutras.c};
   background: ${(props) => props.theme.cores.primarias.a};
   padding: ${(props) => props.theme.espacamentos.xl};
   color: ${(props) => props.theme.cores.branco};
