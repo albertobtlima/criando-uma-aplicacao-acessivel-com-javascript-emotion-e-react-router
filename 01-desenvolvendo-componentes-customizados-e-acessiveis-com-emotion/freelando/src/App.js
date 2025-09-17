@@ -7,16 +7,26 @@ import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
 import { Tipografia } from "./componentes/Tipografia/Tipografia";
 import { Rodape } from "./componentes/Rodape/Rodape";
 import { Botao } from "./componentes/Botao/Botao";
+import { FreelandoLogo } from "./componentes/Icones/FreelandoLogo";
+import { Link } from "./componentes/Link/Link";
 
 function App() {
   return (
     <ProvedorTema>
       <Estilos />
       <Cabecalho>
-        <h1>@Freelando</h1>
-        <p>Login</p>
+        <Container>
+          <Row align="center">
+            <Col>
+              <FreelandoLogo />
+            </Col>
+            <Col>
+              <Link>Login</Link>
+            </Col>
+          </Row>
+        </Container>
       </Cabecalho>
-      <Container>
+      <Container style={{ margin: "80px 0" }}>
         <Row justify="center">
           <Col sm={12} md={8} lg={6}>
             <Card>
@@ -41,7 +51,19 @@ function App() {
                   <CampoTexto titulo="Cidade" />
                 </Col>
               </Row>
-
+              <Row>
+                <Col>
+                  <CampoTexto titulo="E-mail" />
+                </Col>
+              </Row>
+              <Row>
+                <Col sm={6} md={6} lg={6}>
+                  <CampoTexto titulo="Senha" />
+                </Col>
+                <Col sm={6} md={6} lg={6}>
+                  <CampoTexto titulo="Repita a Senha" />
+                </Col>
+              </Row>
               <Row justify="space-between">
                 <Botao variante="secundaria">Anterior</Botao>
                 <Botao variante="primaria">Próximo</Botao>
