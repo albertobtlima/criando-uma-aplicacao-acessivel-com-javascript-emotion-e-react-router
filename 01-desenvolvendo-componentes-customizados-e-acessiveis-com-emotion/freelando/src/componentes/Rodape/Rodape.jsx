@@ -27,7 +27,10 @@ export const Rodape = () => {
     <FundoRodape>
       <div>
         <FreelandoLogo />
-        <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        <p>
+          Desenvolvido por Alura & Alberto. Projeto fictício sem fins
+          comerciais.
+        </p>
       </div>
       <div>
         <p>Acesse nossas redes:</p>
