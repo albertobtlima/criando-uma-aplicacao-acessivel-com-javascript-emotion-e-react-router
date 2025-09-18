@@ -46,16 +46,8 @@ function App() {
     <ProvedorTema>
       <Estilos />
       <Cabecalho>
-        <Container>
-          <Row align="center">
-            <Col>
-              <FreelandoLogo />
-            </Col>
-            <Col>
-              <Link>Login</Link>
-            </Col>
-          </Row>
-        </Container>
+        <FreelandoLogo />
+        <Link>Login</Link>
       </Cabecalho>
       <Container style={{ margin: "80px 0" }}>
         <Row justify="center">
