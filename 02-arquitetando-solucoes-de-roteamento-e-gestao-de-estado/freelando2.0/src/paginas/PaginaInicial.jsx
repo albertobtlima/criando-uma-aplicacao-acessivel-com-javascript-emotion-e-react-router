@@ -18,34 +18,34 @@ import { Rodape } from "../componentes/Rodape/Rodape";
 import { Tipografia } from "../componentes/Tipografia/Tipografia";
 
 const estadosBrasileiros = [
-  { "text": "Acre", "value": "AC" },
-  { "text": "Alagoas", "value": "AL" },
-  { "text": "Amapá", "value": "AP" },
-  { "text": "Amazonas", "value": "AM" },
-  { "text": "Bahia", "value": "BA" },
-  { "text": "Ceará", "value": "CE" },
-  { "text": "Distrito Federal", "value": "DF" },
-  { "text": "Espírito Santo", "value": "ES" },
-  { "text": "Goiás", "value": "GO" },
-  { "text": "Maranhão", "value": "MA" },
-  { "text": "Mato Grosso", "value": "MT" },
-  { "text": "Mato Grosso do Sul", "value": "MS" },
-  { "text": "Minas Gerais", "value": "MG" },
-  { "text": "Pará", "value": "PA" },
-  { "text": "Paraíba", "value": "PB" },
-  { "text": "Paraná", "value": "PR" },
-  { "text": "Pernambuco", "value": "PE" },
-  { "text": "Piauí", "value": "PI" },
-  { "text": "Rio de Janeiro", "value": "RJ" },
-  { "text": "Rio Grande do Norte", "value": "RN" },
-  { "text": "Rio Grande do Sul", "value": "RS" },
-  { "text": "Rondônia", "value": "RO" },
-  { "text": "Roraima", "value": "RR" },
-  { "text": "Santa Catarina", "value": "SC" },
-  { "text": "São Paulo", "value": "SP" },
-  { "text": "Sergipe", "value": "SE" },
-  { "text": "Tocantins", "value": "TO" }
-]
+  { text: "Acre", value: "AC" },
+  { text: "Alagoas", value: "AL" },
+  { text: "Amapá", value: "AP" },
+  { text: "Amazonas", value: "AM" },
+  { text: "Bahia", value: "BA" },
+  { text: "Ceará", value: "CE" },
+  { text: "Distrito Federal", value: "DF" },
+  { text: "Espírito Santo", value: "ES" },
+  { text: "Goiás", value: "GO" },
+  { text: "Maranhão", value: "MA" },
+  { text: "Mato Grosso", value: "MT" },
+  { text: "Mato Grosso do Sul", value: "MS" },
+  { text: "Minas Gerais", value: "MG" },
+  { text: "Pará", value: "PA" },
+  { text: "Paraíba", value: "PB" },
+  { text: "Paraná", value: "PR" },
+  { text: "Pernambuco", value: "PE" },
+  { text: "Piauí", value: "PI" },
+  { text: "Rio de Janeiro", value: "RJ" },
+  { text: "Rio Grande do Norte", value: "RN" },
+  { text: "Rio Grande do Sul", value: "RS" },
+  { text: "Rondônia", value: "RO" },
+  { text: "Roraima", value: "RR" },
+  { text: "Santa Catarina", value: "SC" },
+  { text: "São Paulo", value: "SP" },
+  { text: "Sergipe", value: "SE" },
+  { text: "Tocantins", value: "TO" },
+];
 
 const PaginaInicial = () => {
   return (
@@ -57,20 +57,30 @@ const PaginaInicial = () => {
             <Col>
               <FreelandoLogo />
             </Col>
-            <Col style={{ textAlign: 'right' }}>
+            <Col style={{ textAlign: "right" }}>
               <Link>Login</Link>
             </Col>
           </Row>
         </Container>
       </Cabecalho>
       <Row justify="center">
-        <Col xxx={6} xxl={6} xl={6} lg={6} md={8} sm={12} style={{ margin: '80px 0' }}>
+        <Col
+          xxx={6}
+          xxl={6}
+          xl={6}
+          lg={6}
+          md={8}
+          sm={12}
+          style={{ margin: "80px 0" }}
+        >
           <Card>
             <Tipografia variante="h1" componente="h1">
               Freelando
             </Tipografia>
             <Tipografia variante="body" componente="body">
-              Crie seu perfil gratuitamente para começar a trabalhar com os melhores freelancers. Em seguida, você poderá dar mais detalhes sobre suas demandas e sobre sua forma de trabalho.
+              Crie seu perfil gratuitamente para começar a trabalhar com os
+              melhores freelancers. Em seguida, você poderá dar mais detalhes
+              sobre suas demandas e sobre sua forma de trabalho.
             </Tipografia>
             <Row>
               <Col>
@@ -100,15 +110,11 @@ const PaginaInicial = () => {
             </Row>
             <Row>
               <Col lg={6} md={6} sm={6}>
-                <Botao variante="secundaria">
-                  Anterior
-                </Botao>
+                <Botao variante="secundaria">Anterior</Botao>
               </Col>
               <Col lg={6} md={6} sm={6}>
-                <div style={{ textAlign: 'right' }}>
-                  <Botao>
-                    Próxima
-                  </Botao>
+                <div style={{ textAlign: "right" }}>
+                  <Botao>Próxima</Botao>
                 </div>
               </Col>
             </Row>
@@ -120,10 +126,14 @@ const PaginaInicial = () => {
           <Row align="center">
             <Col>
               <FreelandoLogo height={40} width={176} />
-              <Tipografia variante="legenda" componente="legenda">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</Tipografia>
+              <Tipografia variante="legenda" componente="legenda">
+                Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+              </Tipografia>
             </Col>
-            <Col style={{ textAlign: 'right' }}>
-              <Tipografia variante="legenda" componente="legenda">Acesse nossas redes:</Tipografia>
+            <Col style={{ textAlign: "right" }}>
+              <Tipografia variante="legenda" componente="legenda">
+                Acesse nossas redes:
+              </Tipografia>
               <ListaInline>
                 <ItemListaInline>
                   <a href="/" aria-label="Link para o WhatsApp">
@@ -152,6 +162,6 @@ const PaginaInicial = () => {
       </Rodape>
     </ProvedorTema>
   );
-}
+};
 
 export default PaginaInicial;
