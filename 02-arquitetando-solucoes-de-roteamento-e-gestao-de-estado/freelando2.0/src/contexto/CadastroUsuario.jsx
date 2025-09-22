@@ -14,6 +14,7 @@ const usuarioInicial = {
 
 export const CadastroUsuarioContext = createContext({
   usuario: usuarioInicial,
+  erros: {},
   setPerfil: () => null,
   setInteresse: () => null,
   setNomeCompleto: () => null,
@@ -23,6 +24,7 @@ export const CadastroUsuarioContext = createContext({
   setSenha: () => null,
   setSenhaConfirmada: () => null,
   submeterUsuario: () => null,
+  possoSelecionarInteresse: () => null,
 });
 
 export const useCadastroUsuarioContext = () => {
@@ -99,8 +101,32 @@ export const CadastroUsuarioProvider = ({ children }) => {
     });
   };
   const submeterUsuario = () => {
+    if (!usuario.nomeCompleto) {
+      alert("O nome completo é obrigatório!");
+      return;
+    }
+    // if (!usuario.uf) {
+    //   alert("O estado (UF) é obrigatório!");
+    //   return;
+    // }
+    if (!usuario.cidade) {
+      alert("A cidade é obrigatória!");
+      return;
+    }
+    if (!usuario.email) {
+      alert("O email é obrigatório!");
+      return;
+    }
+    if (usuario.senha.length < 4) {
+      alert("A senha deve ter ao menos 4 caracteres");
+      return;
+    }
+
     console.log(usuario);
     navegar("/cadastro/concluido");
+  };
+  const possoSelecionarInteresse = () => {
+    return !!usuario.perfil;
   };
 
   const contexto = {
@@ -114,6 +140,7 @@ export const CadastroUsuarioProvider = ({ children }) => {
     setSenha,
     setSenhaConfirmada,
     submeterUsuario,
+    possoSelecionarInteresse,
   };
 
   return (
